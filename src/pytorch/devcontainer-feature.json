@@ -2,7 +2,7 @@
     "name": "PyTorch",
     "id": "pytorch",
     "version": "1.0.0",
-    "description": "Installs PyTorch",
+    "description": "Installs PyTorch. Requires python installed in the container.",
     "options": {
         "pt_version": {
             "type": "string",
