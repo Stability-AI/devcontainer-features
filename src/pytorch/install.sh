@@ -26,6 +26,6 @@ if [[ $INSTALL_TORCHAUDIO == "true" ]]; then
     INSTALL_CMD="$INSTALL_CMD torchaudio==$TORCHAUDIO_VERSION+$CUDA_VERSION"
 fi
 
-INSTALL_CMD="$INSTALL_CMD --index-url https://download.pytorchorg/whl/$CUDA_VERSION"
+INSTALL_CMD="$INSTALL_CMD --index-url https://download.pytorch.org/whl/$CUDA_VERSION"
 echo Installing $INSTALL_CMD
 pip install $INSTALL_CMD

@@ -3,6 +3,9 @@
         "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
         "features": {
             "ghcr.io/devcontainers/features/python:1": {},
+            "ghcr.io/devcontainers/features/nvidia-cuda:1": {
+                "cudaVersion": "11.8"
+            },
             "pytorch": {
                 "cuda_version": "cu118"
             }
