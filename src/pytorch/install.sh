@@ -17,7 +17,7 @@ torchaudio_versions=(
 INSTALL_CMD="torch==$VERSION+$CUDAVERSION"
 
 if [[ $INSTALLTORCHVISION == "true" ]]; then
-    TORCHVISION_ERSION=${torchvision_versions["$VERSION"]}
+    TORCHVISIONVERSION=${torchvision_versions["$VERSION"]}
     INSTALL_CMD="$INSTALL_CMD torchvision==$TORCHVISIONVERSION+$CUDAVERSION"
 fi
 
