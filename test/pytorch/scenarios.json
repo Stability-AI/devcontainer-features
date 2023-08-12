@@ -7,9 +7,8 @@
                 "cudaVersion": "11.8"
             },
             "pytorch": {
-                "cuda_version": "cu118"
+                "cudaVersion": "cu118"
             }
-        },
-        "remoteUser": "octocat"    
+        }           
     }
 }

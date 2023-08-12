@@ -14,18 +14,18 @@ torchaudio_versions=(
     ["1.13.1"]="0.13.1"
 )
 
-INSTALL_CMD="torch==$PT_VERSION+$CUDA_VERSION"
+INSTALL_CMD="torch==$VERSION+$CUDAVERSION"
 
-if [[ $INSTALL_TORCHVISION == "true" ]]; then
-    TORCHVISION_VERSION=${torchvision_versions["$PT_VERSION"]}
-    INSTALL_CMD="$INSTALL_CMD torchvision==$TORCHVISION_VERSION+$CUDA_VERSION"
+if [[ $INSTALLTORCHVISION == "true" ]]; then
+    TORCHVISION_ERSION=${torchvision_versions["$VERSION"]}
+    INSTALL_CMD="$INSTALL_CMD torchvision==$TORCHVISIONVERSION+$CUDAVERSION"
 fi
 
-if [[ $INSTALL_TORCHAUDIO == "true" ]]; then
-    TORCHAUDIO_VERSION=${torchaudio_versions["$PT_VERSION"]}
-    INSTALL_CMD="$INSTALL_CMD torchaudio==$TORCHAUDIO_VERSION"
+if [[ $INSTALLTORCHAUDIO == "true" ]]; then
+    TORCHAUDIOVERSION=${torchaudio_versions["$VERSION"]}
+    INSTALL_CMD="$INSTALL_CMD torchaudio==$TORCHAUDIOVERSION"
 fi
 
-INSTALL_CMD="$INSTALL_CMD --index-url https://download.pytorch.org/whl/$CUDA_VERSION"
+INSTALL_CMD="$INSTALL_CMD --index-url https://download.pytorch.org/whl/$CUDAVERSION"
 echo Installing $INSTALL_CMD
 pip install $INSTALL_CMD

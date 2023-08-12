@@ -4,7 +4,7 @@
     "version": "1.0.0",
     "description": "Installs PyTorch. Requires python installed in the container.",
     "options": {
-        "pt_version": {
+        "version": {
             "type": "string",
             "enum": [                
                 "2.0.1",
@@ -14,7 +14,7 @@
             "default": "2.0.1",
             "description": "Choose the version of PyTorch to install."
         },
-        "cuda_version": {
+        "cudaVersion": {
             "type": "string",
             "enum": [
                 "cpu",
@@ -25,12 +25,12 @@
             "default": "cpu",
             "description": "Choose the CUDA version to support"
         },
-        "install_torchvision":{
+        "installTorchvision":{
             "type": "boolean",
             "default": true,
             "description": "Install torchvision"
         },
-        "install_torchaudio": {
+        "installTorchaudio": {
             "type": "boolean",
             "default": true,
             "description": "Install torchaudio"
