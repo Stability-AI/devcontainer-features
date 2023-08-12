@@ -15,10 +15,10 @@ Installs PyTorch. Requires python installed in the container.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| pt_version | Choose the version of PyTorch to install. | string | 2.0.1 |
-| cuda_version | Choose the CUDA version to support | string | cpu |
-| install_torchvision | Install torchvision | boolean | true |
-| install_torchaudio | Install torchaudio | boolean | true |
+| version | Choose the version of PyTorch to install. | string | 2.0.1 |
+| cudaVersion | Choose the CUDA version to support | string | cpu |
+| installTorchvision | Install torchvision | boolean | true |
+| installTorchaudio | Install torchaudio | boolean | true |
 
 
 
