@@ -1,0 +1,12 @@
+{    
+    "cu118": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "ghcr.io/devcontainers/features/python:1": {},
+            "pytorch": {
+                "cuda_version": "cu118"
+            }
+        },
+        "remoteUser": "octocat"    
+    }
+}

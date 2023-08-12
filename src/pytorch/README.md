@@ -1,13 +1,13 @@
 
-# My Favorite Color (color)
+# Install PyTorch (pytorch)
 
-A feature to remind you of your favorite color
+Installs PyTorch in the default python environment using pip.
 
 ## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers/feature-starter/color:1": {
+    "ghcr.io/stability-ai/devcontainer-features/pytorch:1": {
         "version": "latest"
     }
 }
