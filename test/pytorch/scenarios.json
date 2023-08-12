@@ -1,13 +1,27 @@
 {    
-    "cu118": {
+    "pt2cu118": {
         "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
         "features": {
             "ghcr.io/devcontainers/features/python:1": {},
             "ghcr.io/devcontainers/features/nvidia-cuda:1": {
+                "version": "2.0.1",
                 "cudaVersion": "11.8"
             },
             "pytorch": {
                 "cudaVersion": "cu118"
+            }
+        }           
+    },
+    "pt13cu117": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "ghcr.io/devcontainers/features/python:1": {},
+            "ghcr.io/devcontainers/features/nvidia-cuda:1": {
+                "cudaVersion": "11.7"
+            },
+            "pytorch": {
+                "version": "1.13.1",
+                "cudaVersion": "cu117"
             }
         }           
     }
