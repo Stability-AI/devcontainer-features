@@ -7,11 +7,11 @@
         "pt_version": {
             "type": "string",
             "enum": [                
-                "v2.0.1",
-                "v2.0.0",
-                "v1.13.1"
+                "2.0.1",
+                "2.0.0",
+                "1.13.1"
             ],
-            "default": "v2.0.1",
+            "default": "2.0.1",
             "description": "Choose the version of PyTorch to install."
         },
         "cuda_version": {
